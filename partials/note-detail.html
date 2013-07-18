@@ -1,0 +1,10 @@
+<div class="row-fluid">
+
+  <div class="span12">
+    <h1 class="title">{{note.subject}}</h1>
+    <p class="content" style="margin: 30px 0;">{{note.content}}</p>
+    <p class="meta">Created on {{note.date | date:'medium'}} with importance level <span class="badge{{note.level | levelBadge}}">{{note.level}}</span> and tags <span ng-repeat="tag in note.tags" class="label" style="margin-right: 4px">{{tag}}</span>.</p>
+    <p></p>
+  </div>
+
+</div>
