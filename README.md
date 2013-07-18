@@ -26,7 +26,14 @@ End-to-end tests:
 
 ## Libraries
 
-* AngularJS licensed under the [MIT
-  license](https://docs-angularjs-org-dev.appspot.com/misc/contribute#!)
-* Twitter Bootstrap licensed under [Apache License
-  2.0](http://twitter.github.io/bootstrap/)
+* [AngularJS](http://www.angularjs.org/) licensed under the [MIT
+  License](https://docs-angularjs-org-dev.appspot.com/misc/contribute#!)
+* [Twitter Bootstrap](http://twitter.github.io/bootstrap/) licensed under
+  [Apache License 2.0](http://twitter.github.io/bootstrap/)
+* Twitter Bootstrap depends on [jQuery](http://jquery.com/) licensed under the
+  [MIT license](https://jquery.org/license/)
+
+## Icons
+
+* [Glyphicons Free](http://glyphicons.com/) licensed under [Creative Commons
+  Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en)
