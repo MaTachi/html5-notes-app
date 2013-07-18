@@ -1,0 +1,59 @@
+<div class="row-fluid">
+
+  <div class="span12">
+    <h1>Create a new note</h1>
+  </div>
+
+</div>
+<div class="row-fluid">
+
+  <div class="span4">
+    <legend>Meta</legend>
+
+    <label><i class="icon-folder-open"></i> Tags</label>
+    <textarea ng-model="newNote.tags" rows="2" placeholder="Great tags..."></textarea>
+    <span class="help-block">Separate the tags with commas <code>,</code>.</span>
+
+    <label><i class="icon-star-empty"></i> Importance level</label>
+    <label class="radio inline">
+      <input ng-model="newNote.level" type="radio" value="1"> <span class="badge">1</span>
+    </label>
+    <label class="radio inline">
+      <input ng-model="newNote.level" type="radio" value="2"> <span class="badge badge-success">2</span>
+    </label>
+    <label class="radio inline">
+      <input ng-model="newNote.level" type="radio" value="3"> <span class="badge badge-warning">3</span>
+    </label>
+    <label class="radio inline">
+      <input ng-model="newNote.level" type="radio" value="4"> <span class="badge badge-important">4</span>
+    </label>
+  </div>
+
+  <div class="span8">
+    <form class="form-horizontal">
+      <legend>Note</legend>
+
+      <div class="control-group">
+        <label class="control-label">Title</label>
+        <div class="controls">
+          <input ng-model="newNote.subject" type="text" placeholder="Awesome title...">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Text</label>
+        <div class="controls">
+          <textarea ng-model="newNote.content" rows="3" placeholder="Epic text..."></textarea>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <button type="submit" class="btn" ng-disabled="!newNote.subject || !newNote.content" ng-click="insertNote()">Save</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</div>
